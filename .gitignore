@@ -1,0 +1,39 @@
+# files for the dex VM
+*.dex
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea
+
+# User-specific configurations
+*.iml
+
+# Gradle generated files
+.gradle/
+/gradle
+gradlew
+gradlew.bat
+
+# Built application files
+/*/build/
+/build
+/captures
+
+/import-summary.txt
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ignore library projects
+/otp

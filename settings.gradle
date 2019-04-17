@@ -1,0 +1,2 @@
+include ':app', ':otp' // TODO: remove this project
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Verify</string>
+    <string name="selfSms">Self Sms</string>
+    <string name="from_sys">System</string>
+    <string name="callFromServer">Call From Server</string>
+    <string name="callToServer">Call To Server</string>
+    <string name="smsToServer">Sms to Server</string>
+    <string name="smsFromServer">Sms From Server</string>
+    <string name="verifying">Verifying…</string>
+    <string name="verify">Verify</string>
+
+</resources>
