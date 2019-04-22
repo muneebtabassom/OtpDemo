@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(), OtpListener {
             otp?.initialize("", this, this, lifecycle)
             countryPicker.registerCarrierNumberEditText(editTextPhoneNo)
             fabBtn.setOnClickListener {
+                // country code picker library to use dialer code
                 val phoneNumber = countryPicker.fullNumberWithPlus
                 Logger.info(TAG, "phoneNumber: $phoneNumber")
                 if (checkAndRequestPermissions()) {
@@ -45,13 +46,13 @@ class MainActivity : AppCompatActivity(), OtpListener {
             Snackbar.make(mainActivityID, "Not Connected to internet", Snackbar.LENGTH_LONG).show()
         }
     }
-
+    
     override fun onError(code: OtpErrorCode, message: String) {
         runOnUiThread {
             Snackbar.make(mainActivityID, message, Snackbar.LENGTH_LONG).show()
         }
     }
-
+    // show snackbar to phoneNumber is verified
     override fun onPhoneNumberVerified() {
         runOnUiThread {
             val phoneNumber = countryPicker.fullNumberWithPlus
